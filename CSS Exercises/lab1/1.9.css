@@ -1,0 +1,32 @@
+.basic {
+  width: 100px;
+  height: 6px;
+  margin: 20px;
+}
+
+
+.border {
+  border: 20px solid black;
+}
+
+
+.blue {
+  background-color: blue;
+  color: white;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
+.box
+{
+  width: 400px;
+  height:400px;
+  margin: 40px;
+}

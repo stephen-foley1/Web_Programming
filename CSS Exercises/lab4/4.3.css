@@ -1,0 +1,104 @@
+/* Same CSS styles as in task2.css */
+/*
+Student Number: C00282842
+Exercise: Lab sheet 4
+Date: 19/10/23
+Purpose: create a form using code given
+*/
+body, h2, form {
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Style the form container */
+.student-form {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #0c0303;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(4, 245, 181);
+  background-color: #ef0e0e;
+}
+
+/* Style headings */
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style form elements */
+.input-box, .radio-box, .dropdown, .checkbox-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input[type="text"]
+{
+  padding: 2px;
+
+}
+input[type="radio"], select, input[type="checkbox"] {
+  width: 45%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: deepskyblue;
+  align-content: space-around;
+
+}
+
+/* Style buttons */
+.form-buttons {
+  text-align: center;
+}
+
+input[type="submit"], input[type="reset"] {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type="reset"] {
+  background-color: #04f5b5;
+}
+
+/* Hover effect for buttons */
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style additional fields */
+.input-box {
+  margin-bottom: 15px;
+}
+
+input[type="email"], input[type="url"], input[type="date"] {
+  width: 45%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Adjusted styles for buttons */
+.form-buttons {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Hover effect for buttons */
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #0056b3;
+}

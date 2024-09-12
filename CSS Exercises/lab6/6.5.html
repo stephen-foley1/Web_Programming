@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Statistics</title>
+</head>
+<body>
+
+<!-- Inline JavaScript for Task 5 -->
+<script>
+  var countResults = 0;
+  var countValidResults = 0;
+  var countPass = 0;
+  var countFail = 0;
+  var input;
+
+  // Continue prompting the user until -1 is entered
+  while (input !== -1) {
+    input = parseInt(prompt("Enter a result (or -1 to finish):"));
+
+    // Check if the input is valid (not -1)
+    if (input !== -1) {
+      countResults++;
+
+      // Check if the result is valid (between 0 and 100)
+      if (input >= 0 && input <= 100) {
+        countValidResults++;
+
+        // Check if the student passed or failed
+        if (input >= 40) {
+          countPass++;
+        } else {
+          countFail++;
+        }
+      }
+    }
+  }
+
+  // Display the analysis of the test results
+  document.write("Number of results inputted: " + countResults + "<br>");
+  document.write("Number of valid results inputted: " + countValidResults + "<br>");
+  document.write("Number of students passed: " + countPass + "<br>");
+  document.write("Number of students failed: " + countFail);
+</script>
+
+</body>
+</html>

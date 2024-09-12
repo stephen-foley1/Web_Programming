@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--  Student Number: C00282842
+        Exercise: Lab sheet 4
+        Date: 19/10/23
+        Purpose: create a form using code given
+   -->
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="4.css">
+  <title>Form Demo Task 1</title>
+</head>
+<body>
+<form class="student-form">
+  <h2>Student Form</h2>
+  <div class="input-box">
+    <label for="firstname">First Name:</label>
+    <input type="text" name="firstname" id="firstname" />
+  </div>
+  <div class="input-box">
+    <label for="surname">Surname:</label>
+    <input type="text" name="surname" id="surname"/>
+  </div>
+  <div class="radio-box">
+    <label>Registered?</label><br/>
+    <input type="radio" name="registered" id="registered" value="Regy">
+  </div>
+  <div class="dropdown">
+    <label>Select Year:</label>
+    <select name="schoolyear">
+      <option value="firstYear">First Year</option>
+      <option value="secondYear">Second Year</option>
+      <option value="thirdYear">Third Year</option>
+      <option value="fourthYear">Fourth Year</option>
+    </select>
+  </div>
+  <div class="checkbox-group">
+    Select the course(s) taken:
+    <div class="course">
+      <input type="checkbox" name="course" id="C1" value="deg in Soft">
+      <label for="C1">Degree in Software Development</label>
+    </div>
+    <div class="course">
+      <input type="checkbox" name="course" id="C2" value="deg in IT MGT">
+      <label for="C2">Degree in IT Management</label>
+    </div>
+    <div class="course">
+      <input type="checkbox" name="course" id="C3" value="deg in Cyber">
+      <label for="C3">Degree in Cybersecurity</label>
+    </div>
+    <div class="course">
+      <input type="checkbox" name="course" id="C4" value="deg in Comp Sci">
+      <label for="C4">Degree in Computer Science</label>
+    </div>
+  </div>
+  <div class="form-buttons">
+    <input type="submit" value="Submit Form" name="submit"/>
+    <input type="reset" value="Clear Form" name="reset"/>
+  </div>
+</form>
+</body>
+</html>

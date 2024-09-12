@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  <link rel="icon" type="img/png" href="taglogo.png">
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body background="Background.png"> <!-- Background Image https://pngtree.com/freebackground/futuristic-shape-abstract-background-chemistry-technology-concept-for-website_1250295.html-->
+<style>
+  body {
+    margin: 50px;
+  }
+
+
+  .tabs {    /* This is making the div class tabs */
+    display: flex; /* this changes how the text wraps */
+    flex-wrap: wrap;/* this sets the flex to wrap */
+    max-width: 2000px;/* this makes the tab width bigger */
+    font-family: sans-serif;/* this sets the font for each tab */
+    color: Black;/* this sets the text colour */
+  }
+
+  .TabsLabel { /* this is structuring the Headings for the tabs */
+    padding: 10px 16px; /* this adds a padding */
+    color: Black; /* this sets the text colour */
+    font-size: 1.5em; /* this sets the text size */
+
+  }
+
+  .TabsRadio { /* This configures the tab radio ( radio is how the tabs will look when selected. I thought this worked the best ) */
+    display: none; /* this removes the radio button from the page and hides it while still allowing users to select the tab */
+    color: red; /* this sets the text colour */
+    font-size: 2em; /* this sets the text size */
+  }
+  A{ /* this is defining the all the links in my website */
+    color: green; /* this sets the link colour */
+  }
+  a:hover, a:active, a:focus { /* this makes the links change colour when u hover over them */
+    color: #0418f5; /* this sets the link colour */
+  }
+  .TabsContent { /* this is defing the content of the tabs */
+    order: 1; /* this forces the tab content to show up first when u click on a tab */
+    width: 100%; /*  This changes the content of the tab's width*/
+    border-bottom: 3px solid #ff0000; /* this gives a bottem border to the tabs */
+    font-size: 1em; /* This changes the font size of the text */
+    display: none; /* This allows the text to show up depending on which tab u click on */
+  }
+
+  .TabsRadio:checked + .TabsLabel {
+    font-weight: bold; /* This puts the text in bold */
+    color: #ff00ff;/* this sets the colour to white */
+    border-bottom: 2px solid #04f5b5;/* This gives the tab headings a border at the bottom*/
+  }
+
+  .TabsRadio:checked + .TabsLabel + .TabsContent {
+    display: initial; /* This allows the website to reload all to the inital values it was given i.e the text would go to default settings  */
+  }
+</style>
+<h2>
+  <img src="logo.png" height="150" width="150" align="middle" alt="Logo image should be visible" >
+  <dt><font size="6">  <A href="#" onclick="window.open('About Me.html')">About Me</A></font><font size="6"> <A href="#" onclick="window.open('Hometown.html')">Hometown</A></font><font size="6"> <A href="#" onclick="window.open('Education History.html')">Education History</A></font><font size="6"> <A href="#" onclick="window.open('Hobbies.html')">Hobbies</A></font></dt>
+</h2>
+<div class="tabs">
+  <input type="radio" class="TabsRadio" name="FacilitiesTabs" id="About Me" >
+  <label for="About Me" class="TabsLabel">About Me</label>
+    <div class="TabsContent">
+      <font color="white" size="5">
+    <h3> About Me </h3>
+        <img src="ME.png" height="750" width="500"align="middle" alt="img should be visible">
+        <dt><p> Hello There</p></dt>
+    <p>    My Name is Stephen Foley.</p>
+    <p><br>I was born On the 27th Of December 2003 in University Hospital Waterford.</p>
+    <p><br>I live in a Graignamnagh </p>
+    <p><br>I have 2 uncles and 7 aunties</p>
+    Email: &nbsp;<a href="mailto:C00282842@setu.ie" ><font color="white">C00282842@setu.ie</font> </a>
+  </font>
+</div>
+
+</div>
+
+</body>
+
+</html>

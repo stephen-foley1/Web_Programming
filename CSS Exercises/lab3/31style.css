@@ -1,0 +1,25 @@
+/* Reset some default browser styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.content {
+  padding: 20px;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: red;
+  text-align: center;
+  color: white;
+}
+
+.footer-content {
+  padding: 10px 0;
+}

@@ -1,0 +1,56 @@
+/* Apply the blue background and dark blue border to the entire page */
+body {
+  background-color: lightblue;
+  border: 5px solid darkblue;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Style the container box */
+.box {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* 100% of the viewport height */
+}
+
+/* Position the text within the container */
+.topright {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  background-color: lightblue;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: red;
+  background-color: lightblue;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: red;
+  transform: translate(-50%, -50%);
+  background-color: lightblue;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: red;
+  background-color: lightblue;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  color: red;
+  left: 0;
+  background-color: lightblue;
+}

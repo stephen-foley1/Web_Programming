@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vowel Checker</title>
+</head>
+<body>
+
+<!-- Inline JavaScript for Task 7 -->
+<script>
+  // Define and call the isVowel function
+  function isVowel(char) {
+    // Convert the character to uppercase for case-insensitive comparison
+    var upperChar = char.toUpperCase();
+
+    // Check if the character is a vowel
+    return upperChar === 'A' || upperChar === 'E' || upperChar === 'I' || upperChar === 'O' || upperChar === 'U';
+  }
+
+  var userInput;
+
+  // Keep requesting the input until it is a single character
+  do {
+    userInput = prompt("Enter a single character:");
+
+    // Check if the input is a single character
+  } while (userInput.length !== 1);
+
+  // Call the isVowel function and display the result
+  var result = isVowel(userInput);
+  document.write("Is the entered character a vowel? " + result);
+</script>
+
+</body>
+</html>

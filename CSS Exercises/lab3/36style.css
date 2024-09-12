@@ -1,0 +1,63 @@
+/* Reset default margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  border: red;
+}
+
+
+/* Center the image container */
+.image-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the images */
+.image {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+}
+
+.image1 {
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+
+.image2 {
+  top: 48%;
+  left: 48%;
+  z-index: 0;
+}
+
+.image3 {
+  top: 46%;
+  left: 46%;
+  z-index:-1;
+}
+
+.image4 {
+  top: 44%;
+  left: 44%;
+  z-index: -2;
+}
+
+.image5 {
+  top: 42%;
+  left: 42%;
+  z-index: -3;
+}
+header {
+  position: absolute;
+  text-align: center;
+  background-color: deepskyblue;
+  border: 5px solid blue;
+  width: 100%;
+  padding: 10px;
+  top: calc(35vh - 180px); /* calc function lets you adjust the value to position the header just above the images */
+}

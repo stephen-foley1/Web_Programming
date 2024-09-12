@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sort Array</title>
+</head>
+<body>
+
+<!-- Inline JavaScript for Task 8 -->
+<script>
+  // Define the sortArray function
+  function sortArray(words) {
+    // Create a copy of the array before sorting
+    var copyArray = words.slice();
+
+    // Use the sort method to sort the copied array alphabetically
+    var sortedArray = copyArray.sort();
+
+    // Return the sorted array
+    return sortedArray;
+  }
+
+  // Define an array of words
+  var wordArray = ["Ferarri", "Lamborghini", "Mercedes-Benz", "Bmw", "Audi"];
+
+  // Call the sortArray function and store the result
+  var sortedArray = sortArray(wordArray);
+
+  // Display the contents of the original array
+  document.write("<p>Original Array: " + wordArray.join(", ") + "</p>");
+
+  // Display the sorted array
+  document.write("<p>Sorted Array: " + sortedArray.join(", ") + "</p>");
+</script>
+
+</body>
+</html>

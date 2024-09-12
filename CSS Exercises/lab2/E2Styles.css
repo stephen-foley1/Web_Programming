@@ -1,0 +1,48 @@
+
+/* Header Comment:
+   Name: Stephen Foley
+   Student ID: C00282842
+   Date: 05/10/2023
+   Lab Sheet Number: E2
+   Exercise Number: 2
+*/
+
+/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar {
+  background-color: #ff0000;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+/* Style the navigation list */
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Space between list items */
+}
+
+/* Style the navigation links */
+.nav-list li {
+  text-transform: uppercase; /* Uppercase text */
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #ffffff; /* Default text color */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Change text color on hover */
+.nav-list a:hover {
+  color: #ff5733; /* Distinctive color on hover */
+}

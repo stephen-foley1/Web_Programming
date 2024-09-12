@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="img/png" href="taglogo.png"><!--pint fo guiness https://www.pngitem.com/middle/bxboh_pint-of-guinness-png-transparent-png/-->
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body  background="Background.png"> <!-- Background Image https://pngtree.com/freebackground/futuristic-shape-abstract-background-chemistry-technology-concept-for-website_1250295.html-->
+<style>
+  body {
+    margin: 50px;
+  }
+
+
+  .tabs {    /* This is making the div class tabs */
+    display: flex; /* this changes how the text wraps */
+    flex-wrap: wrap;/* this sets the flex to wrap */
+    max-width: 2000px;/* this makes the tab width bigger */
+    font-family: sans-serif;/* this sets the font for each tab */
+    color: #07ff00;/* this sets the text colour */
+  }
+
+  .TabsLabel { /* this is structuring the Headings for the tabs */
+    padding: 10px 16px; /* this adds a padding */
+    color: #ff0000; /* this sets the text colour */
+    font-size: 1.5em; /* this sets the text size */
+
+  }
+
+  .TabsRadio { /* This configures the tab radio ( radio is how the tabs will look when selected. I thought this worked the best ) */
+    display: none; /* this removes the radio button from the page and hides it while still allowing users to select the tab */
+    color: red; /* this sets the text colour */
+    font-size: 2em; /* this sets the text size */
+  }
+  A{ /* this is defining the all the links in my website */
+    color: #00e8ff; /* this sets the link colour */
+  }
+  a:hover, a:active, a:focus { /* this makes the links change colour when u hover over them */
+    color: #0418f5; /* this sets the link colour */
+  }
+  .TabsContent { /* this is defing the content of the tabs */
+    order: 1; /* this forces the tab content to show up first when u click on a tab */
+    width: 100%; /*  This changes the content of the tab's width*/
+    border-bottom: 3px solid #dddddd; /* this gives a bottem border to the tabs */
+    font-size: 1em; /* This changes the font size of the text */
+    display: none; /* This allows the text to show up depending on which tab u click on */
+  }
+
+  .TabsRadio:checked + .TabsLabel {
+    font-weight: bold; /* This puts the text in bold */
+    color: purple;/* this sets the colour to white */
+    border-bottom: 2px solid #009578;/* This gives the tab headings a border at the bottom*/
+  }
+
+  .TabsRadio:checked + .TabsLabel + .TabsContent {
+    display: initial; /* This allows the website to reload all to the inital values it was given i.e the text would go to default settings  */
+  }
+</style>
+<h2>
+  <img src="logo.png" height="150" width="150" align="middle" alt="Logo image should be visible" >
+  <dt><font size="6">  <A href="#" onclick="window.open('About Me.html')">About Me</A></font><font size="6"> <A href="#" onclick="window.open('Hometown.html')">Hometown</A></font><font size="6"> <A href="#" onclick="window.open('Education History.html')">Education History</A></font><font size="6"> <A href="#" onclick="window.open('Hobbies.html')">Hobbies</A></font></dt>
+</h2>
+<div class="tabs">
+  <input type="radio" class="TabsRadio" name="FacilitiesTabs" id="Hobbies" >
+  <label for="Hobbies" class="TabsLabel">Hobbies</label>
+  <div class="TabsContent">
+    <font color="Black" size="5">
+      <h3> About Me </h3>
+      <dt><p>  My Hobbies</p></dt>
+      <img src="xbox.webp" height="500" width="500"><!-- https://www.nytimes.com/wirecutter/reviews/choosing-best-xbox-series-x-vs-series-s/-->
+      <p>In my spare time I like to play the xbox.</p>
+      <img src="book.jpeg" height="500" width="500"><!--book https://en.wikipedia.org/wiki/Book-->
+      <p>I also like to read books in my spare time. At the moment I am reading Diddley Squat by Jermery Clarkson</p>
+      <img src="barrow1.jpeg" height="500" width="500"><!--river barrow https://www.irishtimes.com/life-and-style/travel/ireland/beauty-on-the-barrow-a-unique-perspective-on-ireland-1.3188826-->
+      <p>During the summer I go swimming in the river. I also go kayaking & canoeing. Graignamanagh has great fishing spots also.</p>
+      <img src="taglogo.png" height="500" width="250"><!--pint of guniess https://www.pngitem.com/middle/bxboh_pint-of-guinness-png-transparent-png/-->
+      <p>On the weekends I go to the pub for a few pints with my friends.</p>
+      Email: &nbsp;<a href="mailto:C00282842@setu.ie" ><font color="white">C00282842@setu.ie</font> </a>
+    </font>
+  </div>
+
+<div class="tabs">
+  <input type="radio" class="TabsRadio" name="FacilitiesTabs" id="Likes/Dislikes" >
+  <label for="Likes/Dislikes" class="TabsLabel">Likes and Dislikes</label>
+  <div class="TabsContent">
+    <font color="black" size="5">
+        <style>
+          /* Some Css To Assist in Designing the table*/
+          table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 0 auto; /* Center the table on the page */
+          }
+
+          th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+
+          th {
+            background-color: #f2f2f2; /* Header background color */
+          }
+        </style>
+      <table>
+        <tr>
+          <th> </th>
+          <th> Likes</th>
+          <th> Dislikes</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td>Video Games.</td>
+          <td>Traffic</td>
+
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Cars</td>
+          <td>Fruit</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td> Travelling</td>
+          <td> Playstayion </td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td> College</td>
+          <td> Price of Diesel</td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td> Playing Pool</td>
+          <td> Price of Rent </td>
+        </tr>
+      </table>
+      <img src="diesel.jpeg" height="500" width="500"><!--Price of diesel https://www.irishexaminer.com/news/arid-40824459.html-->
+      <img src="a4.png" height="500" width="500"><!--car is my own-->
+      Email: &nbsp;<a href="mailto:C00282842@setu.ie" ><font color="white">C00282842@setu.ie</font> </a>
+    </font>
+      </div>
+
+    </font>
+  </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* Reset some default browser styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Create a container with relative positioning */
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+/* Style the boxes */
+.box {
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.red {
+  background-color: red;
+  border: 5px solid darkred;
+  top: 25px;
+  left: 30px;
+}
+
+.green {
+  background-color: green;
+  border: 3px solid darkgreen;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.blue {
+  background-color: blue;
+  border: 2px solid darkblue;
+  top: -25px;
+  right: 30px;
+}

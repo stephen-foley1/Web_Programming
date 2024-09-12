@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Include the CSS file -->
+  <link rel="stylesheet" type="text/css" href="pra1.css">
+  <!-- Include the JavaScript file -->
+  <script src="pra1.js" defer></script>
+  <title>Practice</title>
+</head>
+<body>
+<h2>Customer Form</h2>
+<!-- The customer form with additional phone number input -->
+<form class="customer-form" id="customerForm">
+  <fieldset>
+    <legend>Personal Details:</legend>
+    <div class="input-box">
+      <label for="firstname">First Name:</label>
+      <input type="text" name="firstname" id="firstname" placeholder="John" required
+             pattern="^[A-Za-z]+$" title="Please enter your first name with letters only." />
+    </div>
+    <div class="input-box">
+      <label for="surname">Surname:</label>
+      <input type="text" name="surname" id="surname" placeholder="Doe" required
+             pattern="^[A-Za-z]+$" title="Please enter your surname with letters only." />
+    </div>
+    <div class="input-box">
+      <label for="email">Email Address:</label>
+      <input type="email" name="email" id="email" placeholder="john@example.com" required
+             title="Please enter a valid email address." />
+    </div>
+    <div class="input-box">
+      <label for="website">Website Address:</label>
+      <input type="url" name="website" id="website" placeholder="http://www.example.com"
+             title="Please enter a valid website address." />
+    </div>
+    <div class="input-box">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" name="dob" id="dob" placeholder="DD-MM-YYYY" required
+             title="Please enter a valid date in the format DD-MM-YYYY." />
+    </div>
+    <div class="input-box">
+      <label for="address1">Address:</label>
+      <input type="text" name="address" id="address1" placeholder="Enter Address line 1" required
+             title="Please enter a valid address." />
+      <div class="input-box">
+        <label for="address2"></label>
+        <input type="text" name="address" id="address2" placeholder="Enter Address line 2" required
+               title="Please enter a valid address." />
+        <div class="input-box">
+          <label for="address3"></label>
+          <input type="text" name="address" id="address3" placeholder="Enter Address line 3" required
+                 title="Please enter a valid address." />
+          <div class="input-box">
+            <label for="eircode"></label>
+            <input type="text" name="address" id="eircode" placeholder="Enter Eircode " required
+                   title="Please enter a valid address." />
+            <div class="radio-box">
+              <label>Current Customer. </label><br/>
+              <input type="radio" name="current" id="current" value="customer">
+              <label>New Customer.</label><br/>
+              <input type="radio" name="new" id="new" value="newcust">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Order Details:</legend>
+    <div class="dropdown">
+      <label>Number Of Children in household:</label>
+      <select name="schoolyear">
+        <option value="0">0 </option>
+        <option value="1">1 </option>
+        <option value="2">2 </option>
+        <option value="3">3 </option>
+        <option value="4">4 </option>
+        <option value="5">5 </option>
+        <option value="6">6 </option>
+        <option value="7">7 </option>
+        <option value="8">8 </option>
+        <option value="9">9 </option>
+        <option value="1o">10 </option>
+      </select>
+    </div>
+    <div class="rating-container">
+      <div class="rating-label">
+        0
+      </div>
+      <input type="range" id="satisfaction" min="0" max="10" step="1" list="tickmarks">
+      <div class="rating-label">
+        10
+      </div>
+    </div>
+    <datalist id="tickmarks">
+      <option value="0">
+      <option value="1">
+      <option value="2">
+      <option value="3">
+      <option value="4">
+      <option value="5">
+      <option value="6">
+      <option value="7">
+      <option value="8">
+      <option value="9">
+      <option value="10">
+    </datalist>
+    <div class="slider-track">
+      <div class="slider-fill"></div>
+    </div>
+    <div class="checkbox-group">
+      <label>Select the appliances you own:</label>
+      <div class="appliances">
+        <input type="checkbox" name="appliances" id="a1" value="Dishwasher">
+        <label for="a1">Dishwasher</label>
+      </div>
+      <div class="course">
+        <input type="checkbox" name="appliances" id="a2" value="Toaster">
+        <label for="a2">Toaster</label>
+      </div>
+      <div class="course">
+        <input type="checkbox" name="appliances" id="a3" value="Oven">
+        <label for="a3">Oven</label>
+      </div>
+      <div class="course">
+        <input type="checkbox" name="appliances" id="a4" value="kettle">
+        <label for="a4">Kettle</label>
+      </div>
+    </div>
+    <div class="form-buttons">
+      <input type="submit" value="Submit Form" name="submit"/>
+      <input type="reset" value="Clear Form" name="reset"/>
+    </div>
+  </fieldset>
+</form>
+</body>
+</html>

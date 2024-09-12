@@ -1,0 +1,88 @@
+/* Reset default margin and padding and set the background color to black for the entire page */
+body, h2, form {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+/* Style the form container */
+.employee-form {
+  width: 50%; /* Set the form width to 50% of the viewport */
+  max-width: 600px; /* Set a maximum width for the form */
+  margin: 0 auto; /* Center the form horizontally on the page */
+  padding: 20px;
+  border: 3px solid #0c0303; /* Add a border to the form with a dark color */
+  border-radius: 5px; /* Round the corners of the form */
+  box-shadow: 0 0 10px rgb(255, 255, 255); /* Add a shadow effect to the form */
+  background-color: #888888; /* Set a background color for the form */
+}
+
+/* Style headings */
+h2 {
+  text-align: center; /* Center align the heading */
+  font-size: 24px;
+  margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+/* Style form groups */
+.form-group {
+  margin-bottom: 15px; /* Add spacing between form groups */
+}
+
+label {
+  display: block; /* Display labels as blocks to position them above the input elements */
+  margin-bottom: 5px; /* Add spacing below labels */
+  font-weight: bold; /* Make labels bold for emphasis */
+}
+
+input[type="text"], input[type="email"], input[type="date"] {
+  width: 100%; /* Set the input fields to 100% width */
+  padding: 10px; /* Add padding to input fields */
+  border: 1px solid #ccc; /* Add a border with a light color */
+  border-radius: 5px; /* Round the corners of input elements */
+  outline: none; /* Remove the default focus outline */
+}
+
+input[type="text"]:valid, input[type="email"]:valid, input[type="date"]:valid {
+  border-color: #00ff00; /* Change the border color for valid inputs */
+}
+
+input[type="text"]:invalid, input[type="email"]:invalid, input[type="date"]:invalid {
+  border-color: #f00; /* Change the border color for invalid inputs */
+}
+
+/* Style buttons */
+.form-buttons {
+  text-align: center; /* Center align form buttons */
+}
+
+input[type="submit"], input[type="reset"] {
+  width: 100%; /* Set the buttons to 100% width */
+  padding: 10px; /* Add padding to buttons */
+  background-color: #007BFF; /* Set a background color for buttons */
+  color: #ffffff; /* Set text color for buttons */
+  border: none; /* Remove button borders */
+  border-radius: 5px; /* Round the corners of buttons */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  margin-top: 15px; /* Add margin above form buttons */
+}
+
+input[type="reset"] {
+  background-color: #04f5b5; /* Set a different background color for the reset button */
+}
+
+/* Hover effect for buttons */
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Additional styles for phone number input */
+input[type="text"][name="phone"] {
+  width: 100%; /* Set the phone number input to 100% width */
+  padding: 10px; /* Add padding to the phone number input */
+}
+
+/* Style for legend (fieldset title) */
+legend {
+  font-weight: bold;
+}

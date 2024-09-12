@@ -1,0 +1,37 @@
+/* Reset some default browser styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Create a container with a flex layout to position the boxes vertically */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+/* Style the boxes */
+.box {
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  margin: 10px; /* Margin for spacing between boxes */
+}
+
+.red {
+  background-color: red;
+  border: 5px solid darkred;
+}
+
+.green {
+  background-color: green;
+  border: 3px solid darkgreen;
+}
+
+.blue {
+  background-color: blue;
+  border: 2px solid darkblue;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="img/png" href="taglogo.png"> <!-- taglogo: https://www.pngitem.com/middle/bxboh_pint-of-guinness-png-transparent-png/ -->
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body background="Background.png"> <!-- Background Image https://pngtree.com/freebackground/futuristic-shape-abstract-background-chemistry-technology-concept-for-website_1250295.html-->
+<style>
+  body {
+    margin: 50px;
+  }
+
+
+  .tabs {    /* This is making the div class tabs */
+    display: flex; /* this changes how the text wraps */
+    flex-wrap: wrap;/* this sets the flex to wrap */
+    max-width: 2000px;/* this makes the tab width bigger */
+    font-family: sans-serif;/* this sets the font for each tab */
+    color: Black;/* this sets the text colour */
+  }
+
+  .TabsLabel { /* this is structuring the Headings for the tabs */
+    padding: 10px 16px; /* this adds a padding */
+    color: Orange; /* this sets the text colour */
+    font-size: 1.5em; /* this sets the text size */
+
+  }
+
+  .TabsRadio { /* This configures the tab radio ( radio is how the tabs will look when selected. I thought this worked the best ) */
+    display: none; /* this removes the radio button from the page and hides it while still allowing users to select the tab */
+    color: deeppink; /* this sets the text colour */
+    font-size: 2em; /* this sets the text size */
+  }
+  A{ /* this is defining the all the links in my website */
+    color: Black; /* this sets the link colour */
+  }
+  a:hover, a:active, a:focus { /* this makes the links change colour when u hover over them */
+    color: #0418f5; /* this sets the link colour */
+  }
+  .TabsContent { /* this is defining the content of the tabs */
+    order: 1; /* this forces the tab content to show up first when u click on a tab */
+    width: 100%; /*  This changes the content of the tab's width*/
+    border-bottom: 3px solid #e10404; /* this gives a bottom border to the tabs */
+    font-size: 1em; /* This changes the font size of the text */
+    display: none; /* This allows the text to show up depending on which tab u click on */
+  }
+
+  .TabsRadio:checked + .TabsLabel {
+    font-weight: bold; /* This puts the text in bold */
+    color:  #00ff00;/* this sets the colour to white */
+    border-bottom: 2px solid #009578;/* This gives the tab headings a border at the bottom*/
+  }
+
+  .TabsRadio:checked + .TabsLabel + .TabsContent {
+    display: initial; /* This allows the website to reload all to the inital values it was given i.e the text would go to default settings  */
+  }
+</style>
+<h2>
+  <img src="logo.png" height="150" width="150" align="middle" alt="Logo image should be visible" >
+  <dt><font size="6">  <A href="#" onclick="window.open('About Me.html')">About Me</A></font><font size="6"> <A href="#" onclick="window.open('Hometown.html')">Hometown</A></font><font size="6"> <A href="#" onclick="window.open('Education History.html')">Education History</A></font><font size="6"> <A href="#" onclick="window.open('Hobbies.html')">Hobbies</A></font></dt>
+</h2>
+<div class="tabs">
+  <input type="radio" class="TabsRadio" name="FacilitiesTabs" id="Primary Schools">
+  <label for="Primary Schools" class="TabsLabel">Primary Schools</label>
+  <div class="TabsContent">
+    <font color="#faebd7" size="5">
+      <h3> Primary Schools</h3>
+      <dt><p> Scoil Muíre Gán Smal</p></dt>
+      <p>I Started my Education journey in what's nicknamed the "girls school" in Graignamanagh.</p>
+      <p>I started in 2007. Boys only stay in the school from Junior Infants to 1st class.</p>
+      <p>Girls however stay From Junior Infants all the way to 6th class</p>
+      <dt><p>Graignamanagh B.N.S</dt></p>
+      <p>In 2010 I started in the what's called the "boy's school"in Graignamanagh</p>
+      <p>Boys come from the girls school to the boys school when they are going into 2nd class.</p>
+      <p>Overall i enjoyed my experience int he boys school over the girls school.</p>
+      Email: &nbsp;<a href="mailto:C00282842@setu.ie" ><font color="white">C00282842@setu.ie</font> </a>
+    </font>
+  </div>
+  <div class="tabs">
+    <input type="radio" class="TabsRadio" name="FacilitiesTabs" id="Secondary School" >
+    <label for="Secondary School" class="TabsLabel">Secondary School</label>
+    <div class="TabsContent">
+      <font color="#f5f5f5" size="5">
+        <h3> Secondary School</h3>
+        <img src="duiskecollege.jpeg" height="400"width="400"><!--Image of duiske college https://duiskecollege.ie/photo-gallery/-->
+        <dt><p> Duiske College</p></dt>
+        <p>I started my First Year in Duiske College Secondary school in 2016.</p>
+        <p>I really enjoyed secondary school. Even though my school was tiny with just 135 students in the whole school,</p>
+        <p>we had great craic and wo lots of medals for hurling and gaelic football beating schools up to 10x our size</p>
+        <p>I Graduated from Duiske College in 2022</p>
+        Email: &nbsp;<a href="mailto:C00282842@setu.ie" ><font color="white">C00282842@setu.ie</font> </a>
+      </font>
+    </div>
+    <div class="tabs">
+      <input type="radio" class="TabsRadio" name="FacilitiesTabs" id="College" >
+      <label for="College" class="TabsLabel">College</label>
+      <div class="TabsContent">
+        <font color="#f8f8ff" size="5">
+          <h3> College</h3>
+          <img src="setucarlow.jpeg" height="400" width="500"><!-- Setu carlow image https://careersportal.ie/colleges/college.php?client_id=221&college_id=39-->
+          <dt><p> SETU Carlow</p></dt>
+          <p> I started in Setu Carlow in 2022 and am currently enrolled there as of now.</p>
+          <p> So Far it has been a great experience with meeting new friends and gaining a new sense of responsibility.</p>
+          <a HREF="https://www.itcarlow.ie" style="alignment: bottom"><font color="white">itcarlow.ie</font></a>
+        <br>  Email: &nbsp;<a href="mailto:C00282842@setu.ie" ><font color="white">C00282842@setu.ie</font> </a>
+        </font>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!--Task 1
+Create a form that the user can use to enter details about an Employee.
+Include the following details about the Employee:
+
+
+Field	Status		Input allowed
+Employee Id	Required	One capital letter followed by 6 digits.
+Name	Required	Text.
+Address	Required	Text.
+Eircode		7 characters. Capital letters and numbers only. Do not allow the letter ‘O’ to be included. E.g. A65F4E2.
+PPS number	Required	7 digits followed by one or two capital letters.
+Email address 	Required	Standard Email conventions.
+Date of birth		Date.
+Phone number		Allow digits, “(“, “)”, - and spaces.
+Submit Button and Clear button
+
+Use placeholders where useful, titles to have more useful messages and all appropriate fields are required. Ensure that the focus starts on the Employee id.
+Use patterns for validation where appropriate – Phone number, Eircode, and Employee Id.
+Use a linked style sheet to give your form a nice, useable appearance. Ensure that the input boxes are lined up.
+Save your files as task1.html and task1.css in the Lab5 folder.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="5.css"> <!-- Link to the external CSS stylesheet -->
+  <title>Employee Details Form</title> <!-- Set the title of the HTML page -->
+</head>
+<body>
+<h2>Employee Details</h2> <!-- Heading for the form -->
+<form class="employee-form"> <!-- Start of the form with a CSS class "employee-form" -->
+  <fieldset> <!-- Start of the first fieldset for Personal Details -->
+    <legend>Personal Details:</legend> <!-- Legend for the fieldset -->
+    <div class="form-group"> <!-- Start of the form group for Employee ID -->
+      <label for="employeeId">Employee ID:</label> <!-- Label for the Employee ID input -->
+      <input type="text" name="employeeId" id="employeeId" placeholder="A123456" required pattern="[A-Z]\d{6}" title="One capital letter followed by 6 digits." /> <!-- Input for Employee ID with attributes and validation -->
+    </div> <!-- End of the form group for Employee ID -->
+    <!-- (Repeat the above structure for the remaining form fields) -->
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="John Doe" required />
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" name="address" id="address" placeholder="123 Main St" required />
+    </div>
+    <div class="form-group">
+      <label for="eircode">Eircode:</label>
+      <input type="text" name="eircode" id="eircode" placeholder="A65F4E2" required pattern="[A-NP-Z0-9]{7}" title="7 characters. Capital letters and numbers only. Do not allow the letter 'O'." />
+    </div>
+    <div class="form-group">
+      <label for="pps">PPS Number:</label>
+      <input type="text" name="pps" id="pps" placeholder="1234567A" required pattern="\d{7}[A-Z]{1,2}" title="7 digits followed by one or two capital letters." />
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" name="email" id="email" placeholder="john@example.com" required />
+    </div>
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" name="dob" id="dob" required />
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="text" name="phone" id="phone" placeholder="(123) 456-7890" pattern="[0-9()\-\s]+" title="Allow digits, '(', ')', - and spaces." />
+    </div>
+  </fieldset> <!-- End of the first fieldset -->
+  <div class="form-buttons"> <!-- Start of the form buttons container -->
+    <input type="submit" value="Submit" name="submit" /> <!-- Submit button -->
+    <input type="reset" value="Clear" name="reset" /> <!-- Clear button -->
+  </div> <!-- End of the form buttons container -->
+</form> <!-- End of the form -->
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Temperature</title>
+</head>
+<body>
+
+<!-- Inline JavaScript for Task 2 -->
+<script>
+  var temperature = parseInt(prompt("Enter the temperature:"));
+
+  if (temperature > 30) {
+    alert("Very Hot!");
+  } else if (temperature >= 22 && temperature <= 29) {
+    alert("T-shirt and shorts weather");
+  } else if (temperature >= 18 && temperature <= 21) {
+    alert("Around room temperature");
+  } else if (temperature >= 14 && temperature <= 17) {
+    alert("Long sleeve shirt and trousers");
+  } else if (temperature >= 8 && temperature <= 13) {
+    alert("Fleece jacket weather");
+  } else if (temperature >= 2 && temperature <= 7) {
+    alert("Quite cold");
+  } else if (temperature >= -10 && temperature <= 1) {
+    alert("Very Very cold");
+  } else if (temperature < -10) {
+    alert("Don't go out unless you really need to!!");
+  }
+</script>
+
+</body>
+</html>

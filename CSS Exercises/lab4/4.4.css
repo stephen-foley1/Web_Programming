@@ -1,0 +1,183 @@
+/* Include the customer’s
+•	Name
+•	Address
+•	phone number
+•	email address
+•	website address
+•	date of birth
+•	current customer (radio buttons, yes or no)
+•	number of children in household (0 to 10!)
+•	satisfaction rating with company (0 to 10) with slider
+•	checkbox for whether customer has certain electrical appliances (4)
+*/
+/* Same CSS styles as in task2.css */
+/*
+Student Number: C00282842
+Exercise: Lab sheet 4
+Date: 19/10/23
+Purpose: create a form
+*/
+/* Reset default margin and padding and set the background color to black for the entire page */
+body, h2, form {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+/* Style the form container */
+.customer-form {
+  width: 200%; /* Extend the width of the form */
+  max-width: 900px; /* Set a maximum width for the form */
+  margin: 0 auto; /* Center the form horizontally on the page */
+  padding: 20px;
+  border: 3px solid #0c0303; /* Add a border to the form with a dark color */
+  border-radius: 5px; /* Round the corners of the form */
+  box-shadow: 0 0 10px rgb(255, 255, 255); /* Add a shadow effect to the form */
+  background-color: #888888; /* Set a background color for the form */
+}
+
+/* Style headings */
+h2 {
+  text-align: center; /* Center align the heading */
+  font-size: 24px;
+  margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+/* Style form elements */
+.input-box, .radio-box, .dropdown, .checkbox-group {
+  margin-bottom: 15px; /* Add spacing between form elements */
+}
+
+label {
+  display: block; /* Display labels as blocks to position them above the input elements */
+  margin-bottom: 5px; /* Add spacing below labels */
+  font-weight: bold; /* Make labels bold for emphasis */
+}
+
+input[type="text"] {
+  padding: 2px; /* Add padding to text input fields */
+}
+
+input[type="radio"], select, input[type="checkbox"] {
+  width: 45%; /* Set a width for these input elements */
+  padding: 10px; /* Add padding */
+  border: 1px solid #ccc; /* Add a border with a light color */
+  border-radius: 5px; /* Round the corners of the input elements */
+  outline: deepskyblue; /* Add a blue outline on focus */
+  align-content: space-around; /* Align content around these elements */
+}
+
+/* Style buttons */
+.form-buttons {
+  text-align: center; /* Center align form buttons */
+}
+
+input[type="submit"], input[type="reset"] {
+  padding: 10px 20px; /* Add padding to buttons */
+  background-color: #007BFF; /* Set a background color for buttons */
+  color: #ffffff; /* Set text color for buttons */
+  border: none; /* Remove button borders */
+  border-radius: 5px; /* Round the corners of buttons */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  margin-right: 10px; /* Add margin between buttons */
+}
+
+input[type="reset"] {
+  background-color: #04f5b5; /* Set a different background color for reset button */
+}
+
+/* Hover effect for buttons */
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Style additional fields */
+.input-box {
+  margin-bottom: 15px; /* Add spacing between input boxes */
+}
+
+input[type="email"], input[type="url"], input[type="date"] {
+  width: 45%; /* Set a width for specific input types */
+  padding: 10px; /* Add padding */
+  border: 1px solid #ccc; /* Add a border with a light color */
+  border-radius: 5px; /* Round the corners of input elements */
+  outline: none; /* Remove the default focus outline */
+}
+
+/* Adjusted styles for buttons */
+.form-buttons {
+  text-align: center; /* Center align form buttons */
+  margin-top: 15px; /* Add margin above form buttons */
+}
+
+/* Hover effect for buttons */
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Create a container for the slider and rating labels */
+.rating-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* Style for individual rating labels */
+.rating-label {
+  flex: 1; /* Distribute available space evenly among labels */
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Style for the range input */
+input[type="range"] {
+  -webkit-appearance: none;   /* Override default CSS styles */
+  appearance: none;
+  width: 100%;
+  background: transparent; /* Set the background to transparent */
+  outline: none; /* Remove default input focus outline */
+}
+
+/* Create the track for the slider */
+.slider-track {
+  width: 100%;
+  height: 10px;
+  background: #ccc; /* Set a background color for the track */
+  border-radius: 5px; /* Round the track's corners */
+  position: relative;
+}
+
+/* Create the slider fill that represents the selected value */
+.slider-fill {
+  width: 0; /* Initially, the fill has no width */
+  height: 100%;
+  background: #007BFF; /* Set a background color for the fill */
+  border-radius: 5px; /* Round the fill's corners */
+}
+
+/* Style for the thumb (the draggable part of the slider) */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;   /* Override default CSS styles */
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #007BFF; /* Set a background color for the thumb */
+  border: 2px solid #fff; /* Add a border around the thumb */
+  border-radius: 50%; /* Round the thumb's corners */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: #007BFF; /* background colour */
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Style for the thumb when it's active (being clicked or dragged) */
+input[type="range"]::-webkit-slider-thumb:active,
+input[type="range"]::-moz-range-thumb:active {
+  background: #0056b3; /* Change background color on thumb's active state */
+}

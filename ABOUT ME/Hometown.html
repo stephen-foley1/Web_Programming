@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="img/png" href="taglogo.png">
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+
+<body background="Background.png"> <!-- Background Image https://pngtree.com/freebackground/futuristic-shape-abstract-background-chemistry-technology-concept-for-website_1250295.html-->
+
+<style>
+  body {
+    margin: 50px;
+  }
+
+
+  .tabs {    /* This is making the div class tabs */
+    display: flex; /* this changes how the text wraps */
+    flex-wrap: wrap;/* this sets the flex to wrap */
+    max-width: 2000px;/* this makes the tab width bigger */
+    font-family: sans-serif;/* this sets the font for each tab */
+    color: #522602;/* this sets the text colour */
+  }
+
+  .TabsLabel { /* this is structuring the Headings for the tabs */
+    padding: 10px 16px; /* this adds a padding */
+    color: #522602; /* this sets the text colour */
+    font-size: 1.5em; /* this sets the text size */
+
+  }
+
+  .TabsRadio { /* This configures the tab radio ( radio is how the tabs will look when selected. I thought this worked the best ) */
+    display: none; /* this removes the radio button from the page and hides it while still allowing users to select the tab */
+    color: #fffc00; /* this sets the text colour */
+    font-size: 2em; /* this sets the text size */
+  }
+  A{ /* this is defining the all the links in my website */
+    color: #fff400; /* this sets the link colour */
+  }
+  a:hover, a:active, a:focus { /* this makes the links change colour when u hover over them */
+    color: #0418f5; /* this sets the link colour */
+  }
+  .TabsContent { /* this is defing the content of the tabs */
+    order: 1; /* this forces the tab content to show up first when u click on a tab */
+    width: 100%; /*  This changes the content of the tab's width*/
+    border-bottom: 3px solid #0c0303; /* this gives a bottem border to the tabs */
+    font-size: 1em; /* This changes the font size of the text */
+    display: none; /* This allows the text to show up depending on which tab u click on */
+  }
+
+  .TabsRadio:checked + .TabsLabel {
+    font-weight: bold; /* This puts the text in bold */
+    color: #ff00ff;/* this sets the colour to white */
+    border-bottom: 2px solid #04f5b5;/* This gives the tab headings a border at the bottom*/
+  }
+
+  .TabsRadio:checked + .TabsLabel + .TabsContent {
+    display: initial; /* This allows the website to reload all to the inital values it was given i.e the text would go to default settings  */
+  }
+</style>
+
+<h2>
+  <img src="logo.png" height="150" width="150" align="middle" alt="Logo image should be visible" >
+  <dt><font size="6">  <A href="#" onclick="window.open('About Me.html')">About Me</A></font><font size="6"> <A href="#" onclick="window.open('Hometown.html')">Hometown</A></font><font size="6"> <A href="#" onclick="window.open('Education History.html')">Education History</A></font><font size="6"> <A href="#" onclick="window.open('Hobbies.html')">Hobbies</A></font></dt>
+</h2>
+<div class="tabs">
+  <input type="radio" class="TabsRadio" name="FacilitiesTabs" id="Where Im From" >
+  <label for="Where Im From" class="TabsLabel">Hometown</label>
+  <div class="TabsContent">
+    <font color="#f5f5f5" size="5">
+      <h3> Where i grew up </h3>
+      <dt><p> About Graignamanagh:</p></dt>
+      <p>Graignamanagh is a small town located 25 minutes away from Kilkenny city.</p>
+      <p>It Has a lot of history with Duiske Abbey and the bridge. Duiske Abbey was built in the early 13th century and was  </p>
+      <p>destroyed by Queen Victoria in the 1700's. It would later be rebuilt. At its peak Duiske Abbey was the largest estate by far in Graignamanagh</p>
+      <p>The bridge in Graignamanagh was blown up in the 1798 Rebellion and was later rebuilt and has remained in tact ever since </p>
+      <p>Graignamanagh Has a lot of shops and ubs run by local people there is 6 pubs and 17 shops and services in total</p>
+      <ol><img src="mickdoyles.jpeg"height="300"width="300"><!-- mick doyles pub graignamangh https://mickdoyles.ie-->
+        <img src="bridge.jpeg" height="300"widht="300"> <!--img of bridge https://fineartamerica.com/featured/graiguenamanagh-bridge-martina-fagan.html-->
+      <img src="duiske%20abbey.jpeg"height="300" width="300"><!-- duiske abbey http://irishcathedrals.blogspot.com/2013/06/duiske-abbey-graiguenamanagh-co-kilkenny.html--></ol>
+      Email: &nbsp;<a href="mailto:C00282842@setu.ie" ><font color="white">C00282842@setu.ie</font> </a>
+    </font>
+  </div>
+      <div class="tabs">
+        <input type="radio" class="TabsRadio" name="FacilitiesTabs" id="Things to Do in Graignamanagh" >
+        <label for="Things to Do in Graignamanagh" class="TabsLabel">Things to do in Graignamanagh</label>
+        <div class="TabsContent">
+          <font color="White" size="5">
+            <h3> Activities:  </h3>
+            <dt><p> My Top 3 Recommended Activities to do in Graignamanagh</p></dt>
+            <ol>
+              <p> 1. Water activities. Many companies here in Graignamanagh offer water sport</p>
+              <p> activities such as Kayaking, Canoeing, SUP (Stand-up Paddle boarding) and Swimming.</p>
+              <p>These go down a big hit with both the tourists that come to Graignamanagh and the locals</p>
+              <img src="canoeing.webp" height="500" width="500" ><!--https://pureadventure.ie/gallery/#group -->
+              <img src="kayaking.webp" height="500" width="500" ><!--https://pureadventure.ie/gallery/#group -->
+              <img src="sup.webp" height="500" width="500" ><!--https://pureadventure.ie/gallery/#group -->
+            </ol>
+            <ol>
+              <p>2. The Hub/ Glamping. Both the hub and Brandon Hill Glamping are great choices if you want to get away to</p>
+              <p>Graignamangh. The hub Offers 50 parking spaces for caravans with power and bins provided. it costs €12 per night without power  </p>
+              <p> and €17 per night with power. It has boosted Graignamanagh's Economy significantly.</p>
+              <img src="thehub.jpeg" height="500" width="500"><!-- the hub graignamanmgh http://barrowvalleyactivitieshub.ie/gallery/-->
+              <p>Brandon Hill Glamping Offers a lovely getaway up Brandon hill this is very popular with the tourists and the locals.</p>
+              <p>It is a 20 min walk into the town of Graignamanagh or a 5 minute drive. It is €90 per night for one of the Glamping Pods.</p>
+            <img src="graignamanaghglamping.jpeg" height="500" width="500"><!-- Graignamanagh Glamping https://www.glampingkilkenny.ie-->
+            </ol>
+            <ol>
+              <p>3. Hiking Brandon Hill. A great way to get fresh air is by hiking up brandon hill which takes 1 hour 30 minutes - 2 hours.</p>
+              <p>You can see the beauty of Graignamanagh and the surrounding towns. </p>
+              <p>A popular tourist stop is Freeney's Well which has the best water i've ever tasted. Its located about halfway up the Hill.</p>
+            <img src="brandonhill.jpeg" height="500" width="500"><!--image of brandon hill cross https://www.ourlittlehiker.com/brandon-hill/-->
+            </ol>
+            <p><a href="http://barrowvalleyactivitieshub.ie"><font colour="white" >barrowvalleyactiviteshub.ie</font></a><br><a HREF="https://www.glampingkilkenny.ie"><font color="white" style="alignment: bottom">brandonhillcamping.ie</font></a><br>  Email: &nbsp;<a href="mailto:C00282842@setu.ie" ><font color="white">C00282842@setu.ie</font> </a></p>
+
+          </font>
+          </div>
+      </div>
+
+
+
+</div></body>
+</html>

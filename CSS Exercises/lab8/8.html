@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    input:required {
+      border: 1px solid red;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <script>
+    function validateForm() {
+      var email = document.getElementById('email').value;
+      var confirmEmail = document.getElementById('confirmEmail').value;
+      var dob = new Date(document.getElementById('dob').value);
+      var startingDate = new Date(document.getElementById('startingDate').value);
+      var currentDate = new Date();
+
+      if (email !== confirmEmail) {
+        alert("Email addresses do not match.");
+        return false;
+      }
+
+      if (dob > new Date(currentDate.getFullYear() - 17, currentDate.getMonth(), currentDate.getDate())) {
+        alert("The student must be at least 17 years old.");
+        return false;
+      }
+
+      if (startingDate < currentDate) {
+        alert("Starting date must not be before today's date.");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</head>
+<body>
+<form onsubmit="return validateForm()">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" pattern="[A-Za-z. ]+" required>
+
+  <label for="address">Address:</label>
+  <input type="text" id="address" name="address" pattern="[A-Za-z0-9., ]+" required>
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9 ()-]+" >
+
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="confirmEmail">Confirm Email Address:</label>
+  <input type="email" id="confirmEmail" name="confirmEmail" required>
+
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob" required>
+
+  <label for="startingDate">Starting Date:</label>
+  <input type="date" id="startingDate" name="startingDate" required>
+
+  <button type="submit">Submit</button>
+  <button type="reset">Clear</button>
+</form>
+</body>
+</html>

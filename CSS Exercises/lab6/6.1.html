@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sum Calculator</title>
+</head>
+<body>
+
+<!-- Inline JavaScript for Task 1 -->
+<script>
+  // Prompt the user for two numbers and convert them to integers
+  var num1 = parseInt(prompt("Enter the first number:"));
+  var num2 = parseInt(prompt("Enter the second number:"));
+
+  // Calculate the sum of the two numbers
+  var sum = num1 + num2;
+
+  // Create a paragraph element to display the result
+  var resultParagraph = document.createElement("p");
+  resultParagraph.textContent = "The sum is: " + sum;
+
+  // Append the paragraph to the body of the document
+  document.body.appendChild(resultParagraph);
+
+  // Display an alert based on the sum value
+  if (sum > 100) {
+    alert("The sum is greater than 100!");
+  } else {
+    alert("The sum is less than or equal to 100.");
+  }
+</script>
+
+</body>
+</html>
